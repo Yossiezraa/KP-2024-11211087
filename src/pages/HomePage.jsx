@@ -19,9 +19,15 @@ import Berita4 from "../assets/images/karnaval.jpg";
 import Berita5 from "../assets/images/u17.jpg";
 import Berita6 from "../assets/images/koordinasi.jpg";
 
-const HomePage = () => {
+const HomePage = ({ onNavigate }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const heroImages = [HeroImage23, HeroImage1, HeroImage2, HeroImage3, HeroImage4];
+  const heroImages = [
+    HeroImage23,
+    HeroImage1,
+    HeroImage2,
+    HeroImage3,
+    HeroImage4,
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -51,6 +57,7 @@ const HomePage = () => {
               <a
                 href="#informasi-pendaftaran"
                 className="bg-yellow-500 text-gray-800 py-2 px-6 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-colors duration-300"
+                onClick={() => onNavigate("informasiPendaftaran")}
               >
                 Informasi Pendaftaran
               </a>
@@ -120,9 +127,7 @@ const HomePage = () => {
                     <h3 className="text-center text-sm font-semibold mt-1 mb-1">
                       {item.title}
                     </h3>
-                    <p className="text-xs text-center">
-                      {item.description}
-                    </p>
+                    <p className="text-xs text-center">{item.description}</p>
                   </div>
                 </div>
               ))}
@@ -173,7 +178,8 @@ const HomePage = () => {
               },
               {
                 image: Berita6,
-                title: "Rapat Koordinasi Komite, Orang Tua di BPU Desa Kota Bangun 2 ",
+                title:
+                  "Rapat Koordinasi Komite, Orang Tua di BPU Desa Kota Bangun 2 ",
                 description:
                   "Rapat untuk membangun kerjasama yang lebih baik antara sekolah dan keluarga dalam mendukung perkembangan dan kesejahteraan siswa.",
               },

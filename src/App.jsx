@@ -6,6 +6,7 @@ import StrukturOrganisasiPage from "./pages/StrukturOrganisasiPage";
 import VisiMisiPage from "./pages/VisiMisiPage";
 import CapaianPrestasiPage from "./pages/CapaianPrestasiPage";
 import Footer from "./components/Footer";
+import Berita from "./components/Berita";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
@@ -31,6 +32,7 @@ function App() {
         {currentPage === "strukturOrganisasi" && <StrukturOrganisasiPage />}
         {currentPage === "visiMisi" && <VisiMisiPage />}
         {currentPage === "prestasi" && <CapaianPrestasiPage />}
+        {currentPage === "berita" && <Berita />}
       </main>
       <Footer />
     </div>

@@ -88,8 +88,6 @@ const CapaianPrestasiPage = () => {
             <p className="text-xs text-gray-600">Dilaksanakan di Tenggarong</p>
           </div>
         </div>
-      
-        {/* Add more gallery items as needed */}
       </div>
     </div>
   );

@@ -50,6 +50,8 @@ const Navbar = ({ onNavigate }) => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  
+
   let scrollActive = scroll ? "py-2 bg-blue-900 shadow-md" : "py-1.5 bg-blue-900";
 
   return (
