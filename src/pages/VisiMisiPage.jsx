@@ -8,7 +8,6 @@ const images = [
   AboutImage1,
   AboutImage2,
   AboutImage3,
-  // Tambahkan gambar lainnya jika diperlukan
 ];
 
 const VisiMisiPage = () => {
@@ -17,9 +16,9 @@ const VisiMisiPage = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
-    }, 3000); // Ganti gambar setiap 3 detik
+    }, 3000); 
 
-    return () => clearInterval(intervalId); // Bersihkan interval saat komponen di-unmount
+    return () => clearInterval(intervalId); 
   }, []);
 
   return (

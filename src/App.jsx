@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import InfoPendaftaranPage from "./pages/InfoPendaftaranPage";
 import StrukturOrganisasiPage from "./pages/StrukturOrganisasiPage";
 import VisiMisiPage from "./pages/VisiMisiPage";
+import SejarahPage from "./pages/SejarahPage";
 import CapaianPrestasiPage from "./pages/CapaianPrestasiPage";
 import Footer from "./components/Footer";
 import Berita from "./components/Berita";
@@ -15,7 +16,6 @@ function App() {
     setCurrentPage(page);
 
     if (page === "berita") {
-      // Scroll to berita section if on HomePage
       const beritaSection = document.getElementById("berita");
       if (beritaSection) {
         beritaSection.scrollIntoView({ behavior: "smooth" });
@@ -29,6 +29,7 @@ function App() {
       <main>
         {currentPage === "home" && <HomePage />}
         {currentPage === "informasiPendaftaran" && <InfoPendaftaranPage />}
+        {currentPage === "sejarah" && <SejarahPage />}
         {currentPage === "strukturOrganisasi" && <StrukturOrganisasiPage />}
         {currentPage === "visiMisi" && <VisiMisiPage />}
         {currentPage === "prestasi" && <CapaianPrestasiPage />}
