@@ -54,13 +54,13 @@ const HomePage = ({ onNavigate }) => {
                 Selamat Datang di <br />
                 <span className="block">SMP Negeri 4 Kota Bangun</span>
               </h1>
-              <a
+              {/* <a
                 href="#informasi-pendaftaran"
                 className="bg-yellow-500 text-gray-800 py-2 px-6 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-colors duration-300"
                 onClick={() => onNavigate("informasiPendaftaran")}
               >
                 Informasi Pendaftaran
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
