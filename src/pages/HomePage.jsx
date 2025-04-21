@@ -18,6 +18,8 @@ import Berita3 from "../assets/images/pelepasan.jpg";
 import Berita4 from "../assets/images/karnaval.jpg";
 import Berita5 from "../assets/images/u17.jpg";
 import Berita6 from "../assets/images/koordinasi.jpg";
+import Berita7 from "../assets/images/kartini.jpg";
+import Berita8 from "../assets/images/nonton.jpg";
 
 const HomePage = ({ onNavigate }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -183,6 +185,20 @@ const HomePage = ({ onNavigate }) => {
                 description:
                   "Rapat untuk membangun kerjasama yang lebih baik antara sekolah dan keluarga dalam mendukung perkembangan dan kesejahteraan siswa.",
               },
+              {
+                image: Berita7,
+                title:
+                "Upacara Peringatan Hari Kartini 21 April 2025",
+                description:
+                "Upacara dilaksanakan di lapangan sekolah SMPN 4 Kota Bangun dengan khidmat diikuti oleh seluruh siswa, guru, dan staf sekolah. Acara ini bertujuan untuk  mengenang jasa R.A. Kartini dalam memperjuangkan emansipasi wanita di Indonesia.",
+              },
+              {
+                image: Berita8,
+                title:
+                "Nonton Bersama Film RA.Kartini",
+                description:
+                "Sebagai bentuk penghormatan terhadap perjuangan R.A. Kartini, SMPN 4 Kota Bangun mengadakan kegiatan nonton bersama film Kartini. Melalui film ini, para siswa diajak untuk lebih memahami semangat perjuangan Kartini dalam memperjuangkan hak-hak perempuan di masa penjajahan.",
+              }
             ].map((item, index) => (
               <div
                 key={index}
